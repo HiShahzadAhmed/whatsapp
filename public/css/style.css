@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+    
+}
+
+.container-main{
+    background-color: #00a884;
+    align-items: center;
+    height: 30vh;
+    padding-top: 8vh;
+}
+.message{
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px 12px;
+}
+.main{
+    background-color: white;
+    box-shadow: 1px 0 15px 4px #00000078;
+    /* padding: 12px 12px; */
+    display: flex;
+    /* width: 70%; */
+    border-radius: 6px;
+    margin-left: 10%;
+    margin-top: -4%;
+    margin-right: 10%;
+    flex-direction: column;
+}
+.head{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 6px;
+}
+ol{
+    padding: 0px 40px;
+    display: block;
+    font-size: larger;
+    
+}
+img{
+    width: 100%;
+}
+.boxx{
+    display: flex;
+    justify-content: space-between;
+    
+}
+h2{
+    padding: 20px 20px;
+}
+.img{
+    width: 30px;
+    display: inline;
+}
+h1{
+    display: inline;
+}
+.help{
+    font-weight: 300;
+    color: rgb(8, 139, 85);
+    
+}
+a{
+    text-decoration: none;
+    padding: 30px 20px;
+}
+@media screen and (max-width:808px) {
+    .message{
+      display: none;
+    }
+    .logo{
+       marhttps://upload.wikimedia.org/wikipedia/commons/thumb/6/6gin: auto;
+       width: 50%;
+    } 
+  }
+  @media screen and (max-width:524px) {
+      .boxx{
+          flex-wrap: wrap;
+          padding-top: 20px;
+      }
+  }
+
+
+
+  .loader {
+    visibility: visible;
+    background: rgba(0, 0, 0, 1);
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+    text-align: center
+}
+.q-item__section--side > .q-icon {
+    font-size: 24px;
+    color: #fff!important;
+}
+.lds-dual-ring {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    z-index: 99999;
+    top: 42%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+.lds-dual-heading {
+    position: fixed;
+    z-index: 99999;
+    top: 55%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: #198754;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
