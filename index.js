@@ -44,9 +44,13 @@ io.on('connection', (socket) => {
     socket.emit('message', 'Connecting...');
   
 
-    const client = new Client({
-      authStrategy: new LocalAuth({clientId: "abc"})
+    const client = new Client({ 
+      authStrategy: new LocalAuth({clientId: "abc"}), 
+      puppeteer: {
+        args: ['--no-sandbox'],
+      }
     });
+
 
     client.on('qr', (qr) => {
     // use qrcode_terminal for rendering in terminal
